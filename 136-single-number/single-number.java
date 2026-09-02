@@ -1,8 +1,10 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        //Using Map
 
-        // Map<Integer,Integer> map=new HashMap<>();
+        //1st Approach (Using map)
+
+        // Map<Integer,Integer> map =new HashMap<>();
+
         // for(int num:nums){
         //     if(!map.containsKey(num)){
         //         map.put(num,0);
@@ -15,10 +17,8 @@ class Solution {
         //     }
         // }
         // return -1;
-        
 
-
-        //Using XoR
+        //2nd Approach (using XoR)
 
         int res=0;
         for(int num:nums){
