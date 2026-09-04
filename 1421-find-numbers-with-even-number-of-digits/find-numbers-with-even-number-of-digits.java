@@ -38,13 +38,27 @@ class Solution {
 
     //3rd approach
 
-    public int findNumbers(int[] nums) {
+    // public int findNumbers(int[] nums) {
+    //     int evenCount=0;
+    //     for(int num:nums){
+    //        int digitCount= (int)Math.floor(Math.log10(num))+1;
+    //         if(digitCount%2==0){
+    //             evenCount++;
+    //         }
+    //     }
+    //     return evenCount;
+    // }
+
+
+    //4th Approach
+
+     public int findNumbers(int[] nums) {
         int evenCount=0;
         for(int num:nums){
-           int digitCount= (int)Math.floor(Math.log10(num))+1;
-            if(digitCount%2==0){
-                evenCount++;
-            }
+          
+          if( (num >=10 && num<=99) || (num >=1000 && num<=9999) || (num ==100000 )){
+            evenCount++;
+          }
         }
         return evenCount;
     }
