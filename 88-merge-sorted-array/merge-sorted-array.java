@@ -9,7 +9,7 @@ class Solution {
 
 
 
-        // 3rd approach(3 pointer technique)
+        // 2rd approach(3 pointer technique)
         // int i=m-1;
         // int j=n-1;
         // int k=m+n-1;
