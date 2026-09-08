@@ -18,14 +18,24 @@ class Solution {
 
     //Optimize solution 
 
-    int max=-1;
+    // int max=-1;
 
+    // for(int i=arr.length-1;i>=0;i--){
+    //     int temp=arr[i];
+    //     arr[i]=max;
+    //     if(temp > max){
+    //         max=current;
+    //     }
+    // }
+    // return arr;
+
+    //3rd Approach
+
+    int max=-1;
     for(int i=arr.length-1;i>=0;i--){
-        int current=arr[i];
+        int temp=arr[i];
         arr[i]=max;
-        if(current > max){
-            max=current;
-        }
+        max=Math.max(temp,max);
     }
     return arr;
         
