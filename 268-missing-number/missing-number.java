@@ -12,11 +12,22 @@ class Solution {
 
         //2nd Approach
 
-        int xOr=nums.length;
-        for(int i=0;i<nums.length;i++){
-            xOr =xOr ^ i ^ nums[i];
+        // int xOr=nums.length;
+        // for(int i=0;i<nums.length;i++){
+        //     xOr =xOr ^ i ^ nums[i];
+        // }
+        // return xOr;
+
+        //3rd approach
+
+        int n=nums.length;
+        int expected=n*(n+1)/2;
+        int actualSum=0;
+        for(int num:nums){
+            actualSum+=num;
+
         }
-        return xOr;
+        return expected-actualSum;
         
     }
 }
